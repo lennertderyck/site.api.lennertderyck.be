@@ -1,5 +1,3 @@
-const fs = require("fs");
-
 module.exports = (eleventyConfig) => { 
     
     eleventyConfig.setQuietMode(true);
@@ -16,7 +14,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addLayoutAlias('page', 'page.liquid');
     
     return {
-        pathPrefix: '/11ty-template/',
+        pathPrefix: '',
         dir: {
             output: 'docs',
             input: 'src/',
